@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f03ade8e.css",
+    "main.js": "/static/js/main.8ca5c3bf.js",
+    "static/js/453.4b3c2dec.chunk.js": "/static/js/453.4b3c2dec.chunk.js",
+    "static/media/top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg": "/static/media/top-view-chat-bubbles-with-telephone-receiver-copy-space.682c8fcae22323973cb3.jpg",
+    "static/media/pjsoft1.jpg": "/static/media/pjsoft1.c160caf86e19391e42d5.jpg",
+    "static/media/pjsoft2.jpg": "/static/media/pjsoft2.fef0b82d1172aa06fcc5.jpg",
+    "static/media/pjsoft7.jpg": "/static/media/pjsoft7.c9912face5adccfa72cc.jpg",
+    "static/media/pjsoft3.jpg": "/static/media/pjsoft3.7b7afd62fe08e99727d1.jpg",
+    "static/media/pjsoft5.jpg": "/static/media/pjsoft5.87f49f82f417a9075fa2.jpg",
+    "static/media/pjsoft6.jpg": "/static/media/pjsoft6.d1b0535136aebff07947.jpg",
+    "static/media/pjsoft4.jpg": "/static/media/pjsoft4.f60d053499404550a592.jpg",
+    "static/media/pjsoft8.jpg": "/static/media/pjsoft8.d457f7b60859c09dfbe8.jpg",
+    "static/media/logoPj.png": "/static/media/logoPj.53a234b6dddac347009b.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.f03ade8e.css.map": "/static/css/main.f03ade8e.css.map",
+    "main.8ca5c3bf.js.map": "/static/js/main.8ca5c3bf.js.map",
+    "453.4b3c2dec.chunk.js.map": "/static/js/453.4b3c2dec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f03ade8e.css",
+    "static/js/main.8ca5c3bf.js"
+  ]
+}
