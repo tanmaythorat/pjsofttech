@@ -1,0 +1,75 @@
+.main {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+/* .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 35px;
+}
+hr {
+  padding-top: 50px;
+} */
+.clients {
+  margin-top: 0px;
+  text-align: center; /* Center-align the heading */
+  background-color: whitesmoke; /* Background color for the container */
+  padding: 20px; /* Padding around the container */
+  margin-bottom: 40px;
+}
+
+.slider {
+  overflow: hidden; /* Hide overflow to create a sliding effect */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 100%; /* Adjust the width as needed */
+  position: relative;
+}
+
+.slides {
+  display: inline-flex;
+  transition: transform 0.3s ease-in-out; /* Faster transition for the sliding effect */
+}
+
+.slides img {
+  width: 100px; /* Adjust the width of images */
+  margin-right: 20px; /* Adjust the space between images */
+}
+
+
+.img1 {
+  max-width: 100px; /* Adjust the width of the images as needed */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid black; /* Border around each image */
+  padding: 10px; /* Padding inside the border */
+  background-color: #fff; /* Background color for the images */
+  border-radius: 5px; /* Optional: Rounded corners for the images */
+  height: 100px;
+}
+
+.FAQ-image{
+  max-width: 30%; /* Adjust the width of the image */
+  margin-left: 60%;
+  margin-top: -35%;
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid black; /* Border around the image */
+  padding: 10px; /* Padding inside the border */
+  background-color: #fff; /* Background color for the image */
+  border-radius: 5px; /* Optional: Rounded corners for the image */
+  position:relative;
+  top: 20px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px); /* Slide up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Adjust duration and easing as needed */
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+ .test{
+  color: orange;
+ }

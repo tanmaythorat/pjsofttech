@@ -1,0 +1,48 @@
+.img1{
+    width: 100px;
+}
+.h1 {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-40%, -100%);
+    background-color: whitesmoke;
+    padding: 10px;
+    z-index: 1; /* Ensure the heading is above the image */
+  }
+.top_text{
+    margin-left: -30px;
+    margin-right: 20px;
+    
+}
+
+.div2 {
+    margin-top: 30px;
+  }
+  
+  .img2 {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 991.98px) {
+    .img2 {
+      width: 50px; /* Adjust size for smaller screens */
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .div2 {
+      margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+  }
+.image{
+    width: 600px;
+}
+.image1{
+
+    width: 500px;
+}

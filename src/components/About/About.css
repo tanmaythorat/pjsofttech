@@ -1,0 +1,41 @@
+.div1 {
+  margin-top: 50px;
+}
+
+
+.heading {
+  margin-top: 20px;
+  color: rgb(82, 97, 97);
+  font-family: 'Arial', sans-serif; /* Change the font style for heading */
+  font-weight: bold; /* Make the heading bold */
+}
+.heading:hover{
+  color: orange;
+}
+
+.color {
+  color: #0a0909;
+  font-family: 'Georgia', serif; /* Change the font style for subheadings */
+  font-weight: bold; /* Make the subheadings bold */
+}
+
+p{
+  font-family: 'Verdana', sans-serif; /* Change the font style for paragraphs */
+  color: #333; /* Change the font color for paragraphs */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .div1 {
+    padding: 0 15px; /* Add padding for smaller screens */
+  }
+}
+ .img{
+  align-items: center;
+ }
+ .span{
+  color: orange;
+ }
+
+ 

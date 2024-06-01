@@ -1,0 +1,107 @@
+.navbar-custom {
+  background: linear-gradient(to right, #fff,#fff);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  z-index: 1030;
+}
+
+
+
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .nav-dropdown .dropdown-item {
+  color: black;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-dropdown .dropdown-item:hover {
+  color: orange;
+}
+
+.company-name {
+  margin-left: 10px;
+  font-size: 1.5 em;
+  color: orange;
+  font-weight: bold;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.navbar-custom .navbar-brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-custom .navbar-toggler {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Dropdown menu styling */
+.navbar-custom .dropdown-menu {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .dropdown-item {
+  color: black;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: orange;
+  color: #131111;
+}
+
+/* Add padding to the top of the body to prevent content from being hidden behind the navbar */
+body {
+  padding-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .navbar-custom .navbar-brand img {
+      width: 30px;
+      height: 30px;
+  }
+  
+  .company-name {
+      font-size: 1.2em;
+  }
+
+  .navbar-custom .nav-link,
+  .navbar-custom .dropdown-item {
+      padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-custom .navbar-brand {
+      flex-grow: 1;
+      justify-content: center;
+  }
+  
+  .navbar-custom .navbar-collapse {
+      flex-grow: 1;
+      justify-content: flex-end;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-custom .company-name {
+      display: none;
+  }
+
+  .navbar-custom .navbar-toggler {
+      padding: 0.5rem;
+  }
+}
+

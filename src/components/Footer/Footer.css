@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 20px;
+}
+
+.footer {
+  background: linear-gradient(to right, white, #fff);
+  color: black;
+  padding-top: 10px;
+  position: relative;
+  border: 2px solid black; /* Add this line for the border */
+
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+.footer-logo {
+  height: 60px;
+  width: 80px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: 50px;
+}
+
+.footer-services {
+  flex: 3;
+  color: black;
+}
+
+.footer-services h4 {
+  margin-left: 350px;
+  padding: 5px;
+  margin-top: -3%;
+  color: orange;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between columns */
+}
+
+.service-col {
+  flex: 1; /* Make columns take equal space */
+  min-width: 250px; /* Minimum width to avoid too narrow columns */
+}
+
+.service-col ul {
+  list-style-type: style type;;
+  list-style-size: 2px; 
+  padding: 0;
+  size: 1%;
+  color: #000;
+}
+
+.service-col ul li {
+  margin-bottom: 15px;
+  padding: 7px;
+  white-space: nowrap; /* Ensure service names stay on the same line */
+}
+
+.service-col ul li:hover{
+  color: orange; /* Optional: Change color on hover */
+
+}
+
+
+.footer-contact {
+  flex: 1;
+  min-width: 200px; /* Minimum width to avoid too narrow column */
+  box-sizing: border-box;
+  margin-left: 60px;
+  color: black;
+  /* background-color: aqua; */
+}
+
+.footer-contact h4 {
+  margin-top: 3%;
+  padding: 5px;
+  margin-left: 20px;
+  text-align: center;
+  color: orange;
+}
+
+.footer-contact p {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: top;
+}
+
+.footer-contact img {
+  margin-right: 10px;
+}
+
+.footer-contact img.imgSize {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.footer-topright {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.spacebtwicon {
+  padding: 15px;
+  width: 24px;
+  height: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+.spacebtwicon:hover {
+  color: orange; /* Optional: Change color on hover */
+}
+
+@media (max-width: 768px) {
+  .footer-brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-services,
+  .footer-contact {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-col {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+

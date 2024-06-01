@@ -1,0 +1,96 @@
+/* Container styling */
+.faq-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 45%;
+  }
+  
+  /* FAQ heading */
+  .faq-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  /* Accordion styling */
+  .faq-container .accordion {
+    margin-top: 20px;
+  }
+  
+  .faq-container .card {
+    width: 100%; /* Ensure all cards take the full width of the container */
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-container .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-container .card-header {
+    background-color: #fff;
+    color: black;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .faq-container .card-header a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .faq-container .card-header a:hover {
+    text-decoration: underline;
+  }
+  
+  .faq-container .collapse {
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .faq-container .card-body {
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .faq-container .card-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .faq-container .card-body ul li {
+    margin-bottom: 10px;
+  }
+  
+  .faq-container .card-body p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .faq-container .btn-header-link {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .faq-container .btn-header-link.collapsed {
+    color: black;
+    background-color: #fff;
+
+  }
+  
+  .faq-container h2{
+    color:#3fc5f0
+  }

@@ -1,0 +1,10 @@
+/* Custom styles for the navbar */
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 15px;
+  }
+  

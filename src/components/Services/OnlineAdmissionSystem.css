@@ -1,0 +1,104 @@
+.row {
+    position: relative;
+  }
+  
+  .h1 {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-40%, -100%);
+    background-color: whitesmoke;
+    padding: 10px;
+    z-index: 1; /* Ensure the heading is above the image */
+  }
+  
+  .top_text {
+    margin-top: 300px;
+  }
+  
+  .div2 {
+    height: 420px;
+    margin-top: 30px;
+  }
+  
+  .img2 {
+    margin-top: 10px;
+  }
+  
+  .div3 {
+    height: 560px;
+  }
+  
+  .sub {
+    padding-top: 30px;
+  }
+  
+  .image {
+    margin-left: 130px;
+  }
+  
+  /* CSS for vertical responsive design */
+  
+  /* Stack columns vertically for smaller devices */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stack columns vertically */
+    }
+  
+    .col {
+      margin-bottom: 30px; /* Add space between columns */
+    }
+  
+    .sub {
+      text-align: center; /* Center align text */
+      margin-bottom: 30px; /* Add space between content and image */
+    }
+  
+    .h1 {
+      left: 50%; /* Center the heading */
+      top: 50%; /* Center the heading */
+      transform: translate(-50%, -50%); /* Center the heading */
+    }
+  
+    .pt-4,
+    .pb-2 {
+      margin-top: 20px; /* Add space between heading and image */
+      margin-bottom: 20px; /* Add space below image */
+      text-align: center; /* Center align headings */
+    }
+  
+    .image {
+      width: 100%; /* Make image width 100% */
+      height: auto; /* Maintain aspect ratio */
+      margin-left: 0; /* Reset margin left */
+    }
+  }
+  
+  /* Reset styles for larger devices */
+  @media (min-width: 769px) {
+    .row {
+      flex-direction: row; /* Align columns horizontally */
+    }
+  
+    .col {
+      margin-bottom: 0; /* Reset margin-bottom */
+    }
+  
+    .sub {
+      text-align: left; /* Reset text alignment */
+      margin-bottom: 0; /* Reset margin-bottom */
+    }
+  
+    .pt-4,
+    .pb-2 {
+      margin-top: 0; /* Reset margin-top */
+      margin-bottom: 0; /* Reset margin-bottom */
+      text-align: left; /* Reset text alignment */
+    }
+  
+    .image {
+      width: auto; /* Reset image width */
+      margin-left: 130px; /* Apply margin left */
+    }
+  }
+  

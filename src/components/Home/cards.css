@@ -1,0 +1,51 @@
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px; /* Shorter way to set margin for all sides */
+}
+
+.card {
+  width: calc(25% - 20px); /* Adjust width as needed */
+  margin-bottom: 30px;
+  border: 1px solid #a5a4a4;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  color: orange;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Adjust width for medium screens */
+  }
+}
+  
+@media (max-width: 576px) {
+  .card {
+    width: calc(100% - 20px); /* Adjust width for small screens */
+  }
+}

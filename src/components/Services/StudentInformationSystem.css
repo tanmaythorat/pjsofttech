@@ -1,0 +1,66 @@
+.row {
+    position: relative;
+  }
+  
+  .h1 {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-40%, -100%);
+    background-color: whitesmoke;
+    padding: 10px;
+    z-index: 1; /* Ensure the heading is above the image */
+    width:450px; /* Adjust width to your preference */
+    height: 250px; /* Adjust height to your preference */
+    border-radius: 50%; /* Makes the shape circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.top_text{
+  margin-top: 300px;
+}
+.div2{
+  height: 420px;
+  margin-top: 30px;
+}
+.img2{
+  margin-top: 10px;
+}
+.div3{
+  height: 600px;
+  margin-top: 500px;
+}
+.div4{
+  margin-top: 100px;
+}
+.sub{
+  padding-top: 30px;
+}
+.Img1{
+  width: 400px;
+  height: auto;
+  margin-left: 90px;
+  margin-top: 35px;
+}
+.Img2{
+  margin-left: 70px;
+}
+.span{
+  color: orange;
+}
+.key-features {
+  color: black; /* Primary color */
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+}
+.key-features:hover {
+  color: orange; /* Darker shade of the primary color */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.div6{
+  margin-top: -70px;
+}

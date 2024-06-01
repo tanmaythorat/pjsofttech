@@ -1,0 +1,43 @@
+.row {
+  position: relative;
+}
+
+.h1 {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  transform: translate(-40%, -100%);
+  background-color: whitesmoke;
+  padding: 10px;
+  z-index: 1; /* Ensure the heading is above the image */
+}
+
+.top_text {
+  margin-top: 300px;
+}
+.div2 {
+  height: 420px;
+  margin-top: 30px;
+}
+.img2 {
+  margin-top: 10px;
+}
+.div3 {
+  height: 560px;
+}
+.sub {
+  padding-top: 30px;
+}
+.image {
+  margin-left: 130px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #FAD126;
+}
+
+.col{
+  padding: 2px;
+  margin-top: 40px;
+
+}

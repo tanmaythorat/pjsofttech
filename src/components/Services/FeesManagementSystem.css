@@ -1,0 +1,39 @@
+.row {
+    position: relative;
+  }
+  
+  .h1 {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-40%, -100%);
+    background-color: whitesmoke;
+    padding: 10px;
+    z-index: 1; /* Ensure the heading is above the image */
+  }
+
+.top_text{
+  padding-left: 30px;
+  margin-top: 300px;
+}
+.div2{
+  height: 420px;
+  margin-top: 30px;
+}
+.img2{
+  margin-top: 10px;
+}
+.div3{
+  height: 560px;
+  
+}
+.sub{
+  padding-top: 30px;
+}
+.image{
+    
+    margin-left: 130px;
+}
+.top_text{
+  
+}
