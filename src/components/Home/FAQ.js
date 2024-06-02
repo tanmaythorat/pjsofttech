@@ -10,34 +10,75 @@ function FAQ() {
 
   return (
     <div className="faq-container">
-      <h2>FAQs</h2>
+      <h2><span className="span">F</span>AQs</h2>
       <div className="accordion" id="faq">
         {faqData.map((item, index) => (
-          <div className="card" key={index}>
-            <div
-              className="card-header"
-              id={`faqhead${index + 1}`}
-              onClick={() => handleItemClick(index)}
-            >
-              <button
-                className={`btn btn-header-link ${
-                  openItem === index ? "" : "collapsed"
-                }`}
-                aria-expanded={openItem === index ? "true" : "false"}
-                aria-controls={`faq${index + 1}`}
-              >
-                {item.question}
-              </button>
+          index % 2 === 0 && ( // Check if the current index is even
+            <div className="row" key={index}>
+              <div className="col-md-6">
+                <div className="card">
+                  <div
+                    className="card-header"
+                    id={`faqhead${index + 1}`}
+                    onClick={() => handleItemClick(index)}
+                  >
+                    <button
+                      className={`btn btn-header-link ${
+                        openItem === index ? "" : "collapsed"
+                      }`}
+                      aria-expanded={openItem === index ? "true" : "false"}
+                      aria-controls={`faq${index + 1}`}
+                    >
+                      {item.question}
+                    </button>
+                  </div>
+                  <div
+                    id={`faq${index + 1}`}
+                    className={`collapse ${
+                      openItem === index ? "show" : ""
+                    }`}
+                    aria-labelledby={`faqhead${index + 1}`}
+                    data-parent="#faq"
+                  >
+                    <div className="card-body">{item.answer}</div>
+                  </div>
+                </div>
+              </div>
+              {faqData[index + 1] && ( // Check if there's a next FAQ item
+                <div className="col-md-6">
+                  <div className="card">
+                    <div
+                      className="card-header"
+                      id={`faqhead${index + 2}`}
+                      onClick={() => handleItemClick(index + 1)}
+                    >
+                      <button
+                        className={`btn btn-header-link ${
+                          openItem === index + 1 ? "" : "collapsed"
+                        }`}
+                        aria-expanded={openItem === index + 1 ? "true" : "false"}
+                        aria-controls={`faq${index + 2}`}
+                      >
+                        {faqData[index + 1].question}
+                      </button>
+                    </div>
+                    <div
+                      id={`faq${index + 2}`}
+                      className={`collapse ${
+                        openItem === index + 1 ? "show" : ""
+                      }`}
+                      aria-labelledby={`faqhead${index + 2}`}
+                      data-parent="#faq"
+                    >
+                      <div className="card-body">
+                        {faqData[index + 1].answer}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-            <div
-              id={`faq${index + 1}`}
-              className={`collapse ${openItem === index ? "show" : ""}`}
-              aria-labelledby={`faqhead${index + 1}`}
-              data-parent="#faq"
-            >
-              <div className="card-body">{item.answer}</div>
-            </div>
-          </div>
+          )
         ))}
       </div>
     </div>
@@ -57,28 +98,6 @@ const faqData = [
         collection enhance transparency and convenience. Administrators benefit
         from easy application tracking, reducing errors and delays.
       </p>,
-      // Add more paragraphs as needed
-    ],
-  },
-  {
-    question:
-      "How can ExtraaEdge Application Management System benefit education institutes?",
-    answer: [
-      <ul>
-        <p key="1">
-          ExtraaEdge Application Management System can help you with the
-          following:
-        </p>
-        <li key="2">It customises forms to meet your institute's needs.</li>
-        <li key="2">
-          It provides a better interface for a better user experience, resulting
-          in higher prospect engagement.
-        </li>
-        <li key="2">
-          The system is mobile-friendly, allowing candidates to complete it on
-          the go.
-        </li>
-      </ul>,
     ],
   },
   {
@@ -98,6 +117,30 @@ const faqData = [
       </ul>,
     ],
   },
+  {
+    question:
+      "How can ExtraaEdge Application Management System benefit education institutes?",
+    answer: [
+      <p key="1">
+        ExtraaEdge Application Management System can help you with the
+        following:
+      </p>,
+      <ul key="2">
+        <li>
+          It customizes forms to meet your institute's needs.
+        </li>
+        <li>
+          It provides a better interface for a better user experience, resulting
+          in higher prospect engagement.
+        </li>
+        <li>
+          The system is mobile-friendly, allowing candidates to complete it on
+          the go.
+        </li>
+      </ul>,
+    ],
+  },
+ 
   {
     question:
       " How are students assessed and shortlisted using Application Management System?",
@@ -122,6 +165,17 @@ const faqData = [
       </p>,
     ],
   },
+  {
+    question:
+      "How to choose the right & best education CRM for your institute?",
+    answer: [
+      <p>
+        Education CRM software to help you get deeper insights into prospects
+        journey, automate the tasks you hate, and close more admissions faster.
+      </p>,
+    ],
+  },
+
   // Add more FAQ items as needed
 ];
 
